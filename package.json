@@ -1,11 +1,11 @@
 {
-  "name": "eslint-plugin-mkw",
-  "version": "0.0.0",
-  "description": "Airbnb extended, typescript + React rules enforcement",
+  "name": "eslint-config-mkw",
+  "version": "1.0.0",
+  "description": "Airbnb config extended, typescript + React rules enforcement",
   "keywords": [
     "eslint",
-    "eslintplugin",
-    "eslint-plugin"
+    "eslintconfig",
+    "eslint-config"
   ],
   "author": "Walid M",
   "main": "./lib/index.js",
