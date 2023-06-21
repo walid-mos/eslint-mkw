@@ -62,6 +62,7 @@ module.exports = {
 		'@typescript-eslint/no-var-requires': 0,
 		'import/extensions': 0,
 		'import/no-extraneous-dependencies': 0,
+        'import/no-unresolved': 'off',
 		// Node.js
 		'node/no-unpublished-import': ['error', {
 			allowModules: ['cypress', 'prisma', '@prisma/client', 'tailwindcss'],
@@ -90,10 +91,14 @@ module.exports = {
 			unnamedComponents: ['function-expression', 'arrow-function'],
 		}],
 	},
-	overrides: [
-		{
-			files: ['tests/**/*.js'],
-			env: { mocha: true },
-		},
-	],
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+            },
+        }
+    },
 }
