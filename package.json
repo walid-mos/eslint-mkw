@@ -8,17 +8,13 @@
     "eslint-config"
   ],
   "author": "Walid M",
-  "main": "./lib/index.js",
-  "exports": "./lib/index.js",
+  "main": "index.js",
   "scripts": {
     "lint": "npm-run-all \"lint:*\"",
     "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
     "lint:js": "eslint .",
     "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator"
-  },
-  "dependencies": {
-    "requireindex": "^1.2.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.6",
