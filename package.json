@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mkw",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Airbnb config extended, typescript + React rules enforcement",
   "keywords": [
     "eslint",

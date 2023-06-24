@@ -85,7 +85,11 @@ module.exports = {
 		'react/jsx-no-useless-fragment': [1, { allowExpressions: true }],
 		'react/jsx-one-expression-per-line': 'off',
 		'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
-		'react/jsx-props-no-spreading': [1, { custom: 'ignore' }],
+		'react/jsx-props-no-spreading': [1, { 
+            html: 'ignore',
+            explicitSpread: 'ignore',
+            custom: 'ignore' 
+        }],
 		'react/function-component-definition': ['error', {
 			namedComponents: 'arrow-function',
 			unnamedComponents: ['function-expression', 'arrow-function'],
