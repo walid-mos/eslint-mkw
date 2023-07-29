@@ -43,13 +43,20 @@ module.exports = {
 			'error',
 			{
 				groups: [
-					'builtin',
-					'index',
-					['internal', 'external'],
-					['sibling', 'parent'],
+					['builtin', 'external'],
+					'internal',
+					['sibling', 'parent', 'index'],
 					'object',
 					'type',
 				],
+                pathGroups: [
+                    {
+                        pattern: "@/**",
+                        group: "internal",
+                        position: "after"
+                    }
+                ],
+                "newlines-between": "always",
 			},
 		],
 		'no-tabs': 0,
