@@ -5,11 +5,11 @@ module.exports = {
 		'plugin:eslint-plugin/recommended',
 		'airbnb',
 		'plugin:import/recommended',
+		'plugin:import/typescript',
 		'plugin:cypress/recommended',
 		'plugin:@typescript-eslint/eslint-recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:node/recommended',
-
 		'plugin:react/jsx-runtime',
 		'plugin:@next/next/recommended',
 	],
@@ -54,11 +54,17 @@ module.exports = {
                         pattern: "@/**",
                         group: "internal",
                         position: "after"
+                    },
+                    {
+                      pattern: "next/**",
+                      group: "builtin",
+                      position: "before"
                     }
                 ],
                 "newlines-between": "always",
 			},
 		],
+        'no-multiple-empty-lines': ["error", { "max": 2, "maxBOF": 1}],
 		'no-tabs': 0,
 		'no-underscore-dangle': 0,
 		'no-unused-vars': 0,
@@ -105,7 +111,13 @@ module.exports = {
         "import/resolver": {
             "typescript": {
                 "alwaysTryTypes": true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-            },
+                "project": [
+                  "tsconfig.json",
+                  "apps/*/tsconfig.json",
+                  "packages/*/tsconfig.json",
+                  "**/*/tsconfig.json"
+                ]
+            }
         }
     },
 }
