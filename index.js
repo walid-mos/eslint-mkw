@@ -61,6 +61,7 @@ module.exports = {
                       position: "before"
                     }
                 ],
+                "pathGroupsExcludedImportTypes": ["type"],
                 "newlines-between": "always",
 			},
 		],
