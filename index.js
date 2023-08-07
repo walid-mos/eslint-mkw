@@ -59,6 +59,11 @@ module.exports = {
                       pattern: "next/**",
                       group: "builtin",
                       position: "before"
+                    },
+                    {
+                      pattern: "react",
+                      group: "builtin",
+                      position: "before"
                     }
                 ],
                 "pathGroupsExcludedImportTypes": ["type"],
