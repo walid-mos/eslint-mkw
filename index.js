@@ -12,6 +12,7 @@ module.exports = {
 		'plugin:node/recommended',
 		'plugin:react/jsx-runtime',
 		'plugin:@next/next/recommended',
+        'prettier',
 	],
 	env: {
 		browser: true,
@@ -25,20 +26,6 @@ module.exports = {
 	},
 	rules: {
 		// Global JS
-		indent: 0,
-		'@typescript-eslint/indent': ['error', 'tab'],
-		'linebreak-style': [
-			'error',
-			'unix',
-		],
-		quotes: [
-			'error',
-			'single',
-		],
-		semi: [
-			'error',
-			'never',
-		],
 		'import/order': [
 			'error',
 			{
@@ -70,18 +57,18 @@ module.exports = {
                 "newlines-between": "always",
 			},
 		],
-        'no-multiple-empty-lines': ["error", { "max": 2, "maxBOF": 1}],
 		'no-tabs': 0,
 		'no-underscore-dangle': 0,
 		'no-unused-vars': 0,
-		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
 		'max-len': 0,
 		'no-restricted-syntax': 0,
 		'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-		'@typescript-eslint/no-var-requires': 0,
 		'import/extensions': 0,
 		'import/no-extraneous-dependencies': 0,
         'import/no-unresolved': 'off',
+        // Typescript
+		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
+		'@typescript-eslint/no-var-requires': 0,
 		// Node.js
 		'node/no-unpublished-import': ['error', {
 			allowModules: ['cypress', 'prisma', '@prisma/client', 'tailwindcss'],
@@ -95,9 +82,7 @@ module.exports = {
 		'jsx-a11y/no-static-element-interactions': 0,
 		'jsx-a11y/label-has-associated-control': 0,
 		'jsx-a11y/role-supports-aria-props': 0,
-		'react/jsx-indent-props': [2, 'tab'],
 		'react/prop-types': 0,
-		'react/jsx-indent': [2, 'tab'],
 		'react/no-unescaped-entities': 0,
 		'react/require-default-props': 0,
 		'react/no-unused-prop-types': 0,

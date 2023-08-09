@@ -1,6 +1,7 @@
 # eslint-config-mkw
 
 Airbnb extended, typescript + React rules enforcement
+Working with Prettier
 
 # Compatibility
 
@@ -17,6 +18,7 @@ Theses plugins are already included in this package :
 
 Theses configs are already included in this package : 
 - eslint-config-airbnb
+- eslint-config-prettier
 - eslint-import-resolver-typescript
 - @typescript-eslint/parser
 
@@ -47,4 +49,15 @@ Add `mkw` to the extends section of your `.eslintrc` configuration file. This pa
 }
 ```
 
+Recommended .prettierrc : 
+```json
+{
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": false,
+	"singleQuote": true,
+	"bracketSameLine": true,
+	"arrowParens": "avoid"
+}
+```
 
