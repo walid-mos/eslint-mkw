@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-mkw",
-  "version": "1.1.8",
+  "version": "1.2.1",
   "description": "Airbnb config extended, typescript + React rules enforcement",
   "repository": {
     "type": "git",
-    "url": "https://github.com/walid-mos/eslint-mkw.git"
+    "url": "git+https://github.com/walid-mos/eslint-mkw.git"
   },
   "keywords": [
     "eslint",

@@ -73,6 +73,7 @@ module.exports = {
       { argsIgnorePattern: "^_", ignoreRestSiblings: true },
     ],
     "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/consistent-type-imports": "error",
     // Node.js
     "node/no-unpublished-import": [
       "error",
