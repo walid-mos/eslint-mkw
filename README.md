@@ -49,10 +49,9 @@ Add `mkw` to the extends section of your `.eslintrc` configuration file. This pa
 ```
 
 Available configs : 
-- /next 
-- /react
-- /react-library
-- /base
+- /next  (for next applications)
+- /react-library (for react libaries / packages / applications)
+- /base (for typescript packages / projects)
 
 Recommended .prettierrc : 
 ```json

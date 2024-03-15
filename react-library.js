@@ -10,7 +10,7 @@
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: [require("./base")],
+  extends: [require.resolve("./base")],
   globals: {
     React: true,
     JSX: true,
