@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-mkw",
-  "version": "1.2.1",
-  "description": "Airbnb config extended, typescript + React rules enforcement",
+  "version": "2.0.0",
+  "description": "Vercel config extended, typescript + React rules enforcement",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/walid-mos/eslint-mkw.git"
@@ -12,43 +12,30 @@
     "eslint-config"
   ],
   "author": "Walid M",
-  "main": "index.js",
   "files": [
-    "index.js"
+    "base.js",
+    "next.js",
+    "react-library.js"
   ],
   "scripts": {
     "lint": "npm-run-all \"lint:*\"",
     "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
     "lint:js": "eslint .",
-    "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.6",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-cypress": "^2.13.3",
-    "eslint-plugin-eslint-plugin": "^5.0.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.32.2",
-    "prettier": "^3.0.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.19.0",
-    "eslint-doc-generator": "^1.0.0",
-    "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-import": "^2.27.5",
-    "mocha": "^10.0.0",
-    "npm-run-all": "^4.1.5"
+    "@next/eslint-plugin-next": "^14.1.3",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@vercel/style-guide": "^5.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.12.4",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-react": "^7.34.0",
+    "typescript": "^5.3.3"
   },
   "engines": {
-    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=7"
+    "node": ">= 16.0.0"
   },
   "license": "ISC"
 }

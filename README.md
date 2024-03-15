@@ -1,7 +1,9 @@
 # eslint-config-mkw
 
-Airbnb extended, typescript + React rules enforcement
+Vercel extended, typescript + React rules enforcement
 Working with Prettier
+
+Based on [@vercel/style-guide](https://github.com/vercel/style-guide)
 
 # Compatibility
 
@@ -9,18 +11,15 @@ Theses plugins are already included in this package :
 - @next/eslint-plugin-next
 - @typescript-eslint/eslint-plugin
 - eslint
-- eslint-plugin-cypress
-- eslint-plugin-eslint-plugin
 - eslint-plugin-import
-- eslint-plugin-jsx-a11y
 - eslint-plugin-node
 - eslint-plugin-react
 
 Theses configs are already included in this package : 
-- eslint-config-airbnb
 - eslint-config-prettier
 - eslint-import-resolver-typescript
 - @typescript-eslint/parser
+- [@vercel/style-guide](https://github.com/vercel/style-guide)
 
 
 ## Installation
@@ -44,10 +43,16 @@ Add `mkw` to the extends section of your `.eslintrc` configuration file. This pa
 ```json
 {
     "extends": [
-        "eslint-config-mkw"
+        "eslint-config-mkw/next"
     ]
 }
 ```
+
+Available configs : 
+- /next 
+- /react
+- /react-library
+- /base
 
 Recommended .prettierrc : 
 ```json
