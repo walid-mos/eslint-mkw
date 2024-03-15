@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mkw",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Vercel config extended, typescript + React rules enforcement",
   "repository": {
     "type": "git",
