@@ -23,6 +23,9 @@ module.exports = {
         project,
       },
     },
+    node: {
+      extensions: [".mjs", ".cjs", ".js", ".jsx", ".ts", ".tsx"],
+    },
   },
   plugins: ["only-warn"],
   rules: {
